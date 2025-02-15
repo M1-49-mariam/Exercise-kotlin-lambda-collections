@@ -1,7 +1,7 @@
 fun processNumbers(numbers: List<Int>) : List<Int>{
-    val filterOddNumbers = { number1: Int -> number1 % 2 == 0}
+    val filterEvenNumbers = { number1: Int -> number1 % 2 == 0}
     val squareNumbers = { number2: Int -> number2 * number2 }
-    return numbers.filter(filterOddNumbers).map(squareNumbers)
+    return numbers.filter(filterEvenNumbers).map(squareNumbers)
 }
 
 fun main() {
